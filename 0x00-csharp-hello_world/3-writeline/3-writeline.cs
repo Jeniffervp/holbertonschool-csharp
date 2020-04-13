@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace _3_writeline
 {
     class Program
