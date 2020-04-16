@@ -6,6 +6,7 @@ class Array
     {
         if (size < 0)
         {
+            Console.WritheLine("Size cannot be negative");
             return null;
         }
 
