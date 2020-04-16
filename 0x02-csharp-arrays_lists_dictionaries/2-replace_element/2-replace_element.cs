@@ -8,9 +8,7 @@ class Array
         {
             return array;
         }
-	int[] result;
 	array[index] = n;
-	result = array;
-	return result;
+	return array;
     }
 }
