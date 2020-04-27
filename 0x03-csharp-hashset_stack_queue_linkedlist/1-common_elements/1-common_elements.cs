@@ -5,18 +5,15 @@ class List
 {
     public static List<int> CommonElements(List<int> list1, List<int> list2)
     {
+        HashSet<int> list3 = new HashSet<int>(list1);
         List<int> result = new List<int>();
-        foreach (int a in list1) 
+        list3.IntersectWith(list2);
+
+        foreach (int a in list3) 
         {
-            foreach (int b in list2)
-            {
-                if (a == b)
-                {
-                    result.Add(a);
-                }
-            }
+            result.Add(a);
         }
-        result.Sort();
+        
         return result;
     }
 }
