@@ -22,8 +22,5 @@ public struct Dog
         rating = dgRating;
     }
 
-    public override string ToString()
-    {
-        return "Dog name: " + name + "\n" + "Agr: " + age + "\n" + "Owner: " + owner + "\n" + "Rating: " + rating; 
-    }
+    public override string ToString() => $"Dog Name: {name}\nAge: {age}\nOwner: {owner}\nRating: {rating}";
 }
