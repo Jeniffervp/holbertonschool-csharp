@@ -8,7 +8,8 @@ class MyStack
         Console.WriteLine("Number of items: {0}", aStack.Count);
         Console.WriteLine((aStack.Count > 0) ? "Top item: {0}" : "Stack is empty", aStack.Peek());
         Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search) ? "True" : "False");
-        while (aStack.Pop() != search);
+        if (aStack.Contains(search))
+            while (aStack.Pop() != search);
         aStack.Push(newItem);
         return aStack;
     }
