@@ -8,6 +8,12 @@ namespace Enemies
         /// <summary>This is a public field</summary>
         public int health;
 
+        /// <summary>This is a constructor</summary>
+        public Zombie()
+        {
+            health = 0;
+        }
+
         /// <summary>This is a constructor that receives an argument and throw an exception. </summary>
         public Zombie(int value)
         {
