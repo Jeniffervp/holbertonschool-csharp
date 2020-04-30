@@ -6,7 +6,7 @@ namespace Enemies
     public class Zombie
     {
         /// <summary>Get or Set the health</summary>
-        public int health;
+        private int health;
 
         /// <summary>Initializes a new instance of the <see cref="Zombie"/> class </summary>
         public Zombie()
