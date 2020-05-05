@@ -1,4 +1,5 @@
 using NUnit.Framework;
+
 namespace MyMath.Tests
 {
     public class Tests
@@ -14,14 +15,14 @@ namespace MyMath.Tests
             int[,] matrix = new int[,] {
                 {1, 2},
                 {3, 4},
-                {5, 6},
+                {5, 6}
             };
             int num = 2;
             int[,] result = Matrix.Divide(matrix, num);
             int[,] answer = new int[,] {
                 {0, 1},
                 {1, 2},
-                {2, 3},
+                {2, 3}
             };
             Assert.AreEqual(answer, result);
         }
@@ -31,7 +32,7 @@ namespace MyMath.Tests
             int[,] matrix = new int[,] {
                 {1, 2},
                 {3, 4},
-                {5, 6},
+                {5, 6}
             };
             int num = 0;
             int[,] result = Matrix.Divide(matrix, num);
@@ -51,14 +52,14 @@ namespace MyMath.Tests
             int[,] matrix = new int[,] {
                 {1, 2},
                 {3, 0},
-                {5, 6},
+                {5, 6}
             };
             int num = 2;
             int[,] result = Matrix.Divide(matrix, num);
             int[,] answer = new int[,] {
                 {0, 1},
                 {1, 0},
-                {2, 3},
+                {2, 3}
             };
             Assert.AreEqual(answer, result);
         }
