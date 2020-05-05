@@ -12,7 +12,7 @@ namespace MyMath.Tests
         [Test]
         public void List_Empty()
         {
-            List<int> num = null;
+            List<int> num = new List<int>();
             int result = Operations.Max(num);
             Assert.AreEqual(0, result);
         }
