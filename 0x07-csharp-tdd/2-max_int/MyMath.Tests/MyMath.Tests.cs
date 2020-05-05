@@ -44,5 +44,19 @@ namespace MyMath.Tests
             int result = Operations.Max(num);
             Assert.AreEqual(0, result);
         }
+        [Test]
+        public void Repeat_List()
+        {
+            List<int> num = new List<int> {6, 6, 6, 6, 6, 6};
+            int result = Operations.Max(num);
+            Assert.AreEqual(6, result);
+        }
+        [Test]
+        public void Single_Number_List()
+        {
+            List<int> num = new List<int> {6};
+            int result = Operations.Max(num);
+            Assert.AreEqual(6, result);
+        }
     }
 }
