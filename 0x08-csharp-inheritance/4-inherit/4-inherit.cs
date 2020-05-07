@@ -4,4 +4,5 @@
 class Animal { }
 
 /// <summary>Inherit from animal.</summary>
-class Dog : Animal { }
+class Dog : Animal 
+{ }
