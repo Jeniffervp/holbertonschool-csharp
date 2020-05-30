@@ -2,6 +2,10 @@
 
 class MatrixMath
 {
+    /// <summary>Function to multiply a matrix by a scalar</summary>
+    /// <param name="matrix">matrix to be multiply</param>
+    /// <param name="scalar">scalar to multiply</param>
+    /// <returns>matrix with result or matrix with -1 if fail</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
     {
         double[,] wrong = new double[,] {{-1}};

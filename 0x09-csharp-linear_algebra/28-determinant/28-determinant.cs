@@ -1,6 +1,10 @@
 ﻿using System;
 
-class MatrixMath {
+class MatrixMath 
+{
+    /// <summary>Function to find the determinant</summary>
+    /// <param name="matrix">the matrix</param>
+    /// <returns>the determinant or -1 if fail</returns>
     public static double Determinant(double[,] matrix) {
         double deter = 0;
 

@@ -2,6 +2,10 @@
 
 class MatrixMath
 {
+    /// <summary>Funtion to multiply two matrix</summary>
+    /// <param name="matrix1">first matrix</param>
+    /// <param name="matrix2">second matrix</param>
+    /// <returns>matrix with result or matrix with -1 if fail</returns>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] wrong = new double[,] {{-1}};

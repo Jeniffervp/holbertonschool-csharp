@@ -2,6 +2,11 @@
 
 class MatrixMath
 {
+    /// <summary>Funtion to share</summary>
+    /// <param name="matrix">the matrix</param>
+    /// <param name="direction">the direction to rotate</param>
+    /// <param name="factor">the factor</param>
+    /// <returns>matrix with result or -1 if fail</returns>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
         double[,] fail = new double[,] { { -1 } };

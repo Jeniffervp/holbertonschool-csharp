@@ -2,6 +2,9 @@
 
 class MatrixMath
 {
+    /// <summary>function to transpose</summary>
+    /// <param name="matrix">the matrix</param>
+    /// <returns>matrix transpose or empty matrix if fail</returns>
     public static double[,] Transpose(double[,] matrix)
     {
         double[,] empt = new double[,] {{ }};

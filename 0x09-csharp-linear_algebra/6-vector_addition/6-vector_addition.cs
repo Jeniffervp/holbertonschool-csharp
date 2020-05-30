@@ -2,6 +2,10 @@
 
 class VectorMath 
 {
+    /// <summary>Function to add two vectors</summary>
+    /// <param name="vector1">first vector to be sum</param>
+    /// <param name="vector2">second vector to be sum</param>
+    /// <returns>the sum of the two vectors or -1 if fail</returns>
     public static double[] Add(double[] vector1, double[] vector2) 
     {
         double[] wrong = new double[1] {-1};

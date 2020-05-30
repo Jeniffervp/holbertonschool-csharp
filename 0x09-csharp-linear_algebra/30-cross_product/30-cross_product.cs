@@ -2,6 +2,10 @@
 
 class VectorMath
 {
+    /// <summary>Function to find cross product</summary>
+    /// <param name="vector1">first vector</param>
+    /// <param name="vector2">second vector</param>
+    /// <returns>crossproduct or -1 if fail</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
         double[] wrong = new double[]{-1};
