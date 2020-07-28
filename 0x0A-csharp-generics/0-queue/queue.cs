@@ -8,6 +8,6 @@ class Queue<T> {
     /// <returns></returns>
 
     public Type CheckType () {
-        return typeOf (T);
+        return typeof (T);
     }
 }
