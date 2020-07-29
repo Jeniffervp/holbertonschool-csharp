@@ -45,6 +45,7 @@ class Door : Base, IInteractive {
   }
 }
 
+/// <summary>Implement the Base and interfaces</summary>
 class Decoration : Base, IInteractive, IBreakable {
   public bool isQuestItem;
   public int durability { get; set; }
@@ -62,8 +63,8 @@ class Decoration : Base, IInteractive, IBreakable {
   public void Interact () {
     if (durability <= 0)
       Console.WriteLine ("The {0} has been broken.", name);
-    if (isQuestItem == true)
-      Console.WriteLine ("You look at the <name>. There's a key inside.", name);
+    else if (isQuestItem == true)
+      Console.WriteLine ("You look at the {0}. There's a key inside.", name);
     else
       Console.WriteLine ("You look at the {0}. Not much to see here.", name);
   }
@@ -76,5 +77,23 @@ class Decoration : Base, IInteractive, IBreakable {
       Console.WriteLine ("You smash the {0}. What a mess.", name);
     else if (durability < 0)
       Console.WriteLine ("The {0} is already broken.", name);
+  }
+}
+
+class Key : Base, ICollectable {
+  public bool isCollected { get; set; }
+
+  public Key (string name = "Key", bool isCollected = false) {
+    this.name = name;
+    this.isCollected = isCollected;
+  }
+
+  public void Collect () {
+    if (isCollected) {
+      Console.WriteLine ("You have already picked up the {0}.", name);
+    } else {
+      this.isCollected = true;
+      Console.WriteLine ("You pick up the {0}.", name);
+    }
   }
 }
