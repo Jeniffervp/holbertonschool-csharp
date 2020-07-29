@@ -63,7 +63,7 @@ class Decoration : Base, IInteractive, IBreakable {
   public void Interact () {
     if (durability <= 0)
       Console.WriteLine ("The {0} has been broken.", name);
-    if (isQuestItem == true)
+    else if (isQuestItem == true)
       Console.WriteLine ("You look at the {0}. There's a key inside.", name);
     else
       Console.WriteLine ("You look at the {0}. Not much to see here.", name);
