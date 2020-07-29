@@ -45,7 +45,6 @@ class Door : Base, IInteractive {
   }
 }
 
-/// <summary>Implement the Base and interfaces</summary>
 class Decoration : Base, IInteractive, IBreakable {
   public bool isQuestItem;
   public int durability { get; set; }
@@ -64,7 +63,7 @@ class Decoration : Base, IInteractive, IBreakable {
     if (durability <= 0)
       Console.WriteLine ("The {0} has been broken.", name);
     if (isQuestItem == true)
-      Console.WriteLine ("You look at the {0}. There's a key inside.", name);
+      Console.WriteLine ("You look at the <name>. There's a key inside.", name);
     else
       Console.WriteLine ("You look at the {0}. Not much to see here.", name);
   }
